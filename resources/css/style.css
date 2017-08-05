@@ -1,3 +1,69 @@
 html {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-image: url(/resources/images/2013.05_01.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
     
+    display: flex;
+    overflow: scroll;
+}
+
+
+header {
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    z-index: 20;
+}
+
+.header-logo img {
+    width: 8rem;
+    height: auto;
+    padding: 2rem;
+}
+
+nav ul li {
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact {
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    z-index: 40;
+    width: 80%;
+    height: 100%;
+}
+
+.contact-card {
+    color: white;
+    background-color: rgba(0,0,0,0.9);
+    
+    margin-top: 64%;
+    margin-bottom: 5%;
+    width: 70%;
+    height: 600px;
 }
